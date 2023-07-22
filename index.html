@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <!--header section-->
+    <div id="header">
+
+
+
+        <div class="container">
+            <nav>
+                <h1 class="name" style="font-size: 3rem;">Sai <span style="color: rgb(192, 183, 21);">Koushik</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#mywork">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Mobile App Developer</p>
+                <h1>Hi, I'm Sai <br> <span style="color: rgb(192, 183, 21);">Koushik</span> from Chennai</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--About section-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="./assets/images/pf2.png">
+                </div>
+                <div class="about-col2">
+                    <h2 class="sub-title">About Me</h2>
+
+                    <p>I'm a passionate coder and I have intermediate experience in Android app development and Front-end web development pursuing Computer Science and Engineering at Chennai Institute of Technology with experience in Android app development with a strong problem solving skills.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                    <div class="tab-contents1">
+                        <img src="./assets/images/c.png">
+                        <img src="./assets/images/cpp.png">
+                        <img src="./assets/images/python.png">
+                        <img src="./assets/images/java.png">
+                    </div>
+                    
+                    <div class="tab-contents2">
+                        <img src="./assets/images/android.png">
+                        <img src="./assets/images/kotlin.png">
+                        <img src="./assets/images/sql.png">
+                        <img src="./assets/images/firebase.png">
+                    </div>
+
+                    <div class="tab-contents3">
+                        <img src="./assets/images/html.png">
+                        <img src="./assets/images/css.png">
+                        <img src="./assets/images/bootstrap.png">
+                        <img src="./assets/images/js.png">
+                    </div>
+
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+
+                        <ul style="list-style: none;">
+                            <li><h2 style="color: yellow;">App Developer</h2><br><h3 style="color: gray;">07/2023-08/2023</h3><br><h4 style="color: white;">Got an online internship at Bharat Intern for a month as an android app developer and completed the tasks given by them.</h4></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul style="list-style: none;">
+                            <li><h2 style="color: yellow;">B.E. CSE<br> at Chennai Institute of Technology</h2><h3 style="color: gray;">2021-2025</h3><br><h4 style="color: white;">CGPA: 7.9</h4><br></li>
+                            <li><h2 style="color: yellow;">HSC & SSLC<br>at Everwin Matric Hr. Sec. School</h2><h3 style="color: gray;">2014-2021</h3><br><h4 style="color: white;">HSC: 89%<br>SSLC: 83%</h4></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--My work-->
+    <div id="mywork">
+        <div id="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./assets/images/work-1.png">
+                    <div class="layer">
+                        <h3>SnapCove</h3>
+                        <p>I have developed an Android app that allows us to view images on our phone by fetching data from Firebase and swiping up and down using RecyclerView.</p>
+                        <a href="https://github.com/Koushik574/SnapCove"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/images/work-2.png">
+                    <div class="layer">
+                        <h3>Student DB</h3>
+                        <p>The Tkinter-based student database app is a user-friendly tool for eciently managing student information. It oers easy storage, retrieval, and modication of student data, including attendance, grades, and contact details.</p>
+                        <a href="https://github.com/Koushik574/student-DataBase"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane" style="color: #bb2a69;"></i>koushiksai574@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone" style="color: #bb2a69;"></i>+91 7550107257</p>
+
+                    <div class="social-icons">
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=VpCqJVFNXnswTgMxLhSjtXkmxDfBSmMnBThLDCxWkRsmBnKSZMmVBRfmkTdthZLdcSGMrFb"><i class="fa-solid fa-square-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/sai-koushik-842843217/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Koushik574"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="./assets/Resume/Resume.pdf" class="btn btn2">Resume</a>
+                </div>
+
+                <div class="contact-right">
+
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="Email" name="Email" placeholder="Your Email">
+                        <textarea name="Message" rows="6"
+                        placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+                </div>
+            </div>
+
+        <div class="developer">
+            <p>Designed & Developed by Sai Koushik❤️</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+
+            for(tablink of tablinks){
+
+                tablink.classList.remove("active-link");
+
+            }
+
+            for(tabcontent of tabcontents){
+
+                tabcontent.classList.remove("active-tab");
+
+            }
+            
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxQBEjz9ZsIJZggvYodaIZebqUukVHgij_sDNGw7DdQLcy_za6LaXjvNTukM1B74UyqHA/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg = document.getElementById("msg")
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                }, 5000)
+                form.reset()
+            })
+            
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    
+</body>
+</html>
